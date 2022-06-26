@@ -2,7 +2,6 @@
 
 body, hmtl {
     height: 100%;
-    min-height: 100%;
     padding: 0;
     margin:0;
     background-color: aliceblue;
@@ -75,7 +74,16 @@ header > div#links > ul > li{
     display: flex;
     padding: 93px 0 132px 0;
 }
-.hero-frame > div{ flex:1 1 auto; }
+.hero-frame > div{ flex:1 1 0%; }
+.hero-image{
+    display: block;
+    width: 526px; 
+    height: 276px; 
+    background-image: url(../assets/img/juanjo-jaramillo-mZnx9429i94-unsplash.jpg);
+    background-blend-mode: overlay;
+    object-fit: scale-down; 
+    border: 1px solid #324054;
+}
 
 
 /* section TWO */
@@ -105,9 +113,26 @@ section.section-two > div:nth-child(2) {
 section.section-two > div:nth-child(2) > div > div.box{
     width: 100%;
     min-height: 160px;
-    border: 3px solid #3882F6;
-    border-radius: 12px;
+    border: 0;
+    border-radius: 7px;
     display: block;
+}
+
+.box.one{
+    background-image: url(../assets/img/learn.png);
+    background-size: cover;
+}
+.box.two{
+    background-image: url(../assets/img/build.png);
+    background-size: cover;
+}
+.box.three{
+    background-image: url(../assets/img/comunity.png);
+    background-size: cover;
+}
+.box.four{
+    background-image: url(../assets/img/coder.png);
+    background-size: cover;
 }
 
 /* section THREE */
